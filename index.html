@@ -10,6 +10,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
         
@@ -21,6 +23,8 @@
             // INSTANTIATE MIXITUP
         
             $(function(){
+
+
 
                 $('#Grid').mixitup({
                     targetSelector: '.mix',
@@ -50,8 +54,12 @@
                     onMixStart: null,
                     onMixEnd: null
                 });
-            
-                $('#ToList').on('click',function(){
+
+                /*$('#Grid').mixitup('filter','seaside','islands','villages','spa','cities');
+                $('#Grid').mixitup('filter','apartmani','sobe','kuce','hoteli','luksuzne_vile');
+                $('#Grid').mixitup('filter','serbia','montenegro','croatia','greece','bulgaria','macedonia','italy');*/
+    
+                /*$('#ToList').on('click',function(){
                     $('.button').removeClass('active');
                     $(this).addClass('active');
                     $('#Grid').mixitup('toList');
@@ -61,7 +69,8 @@
                     $('.button').removeClass('active');
                     $(this).addClass('active');
                     $('#Grid').mixitup('toGrid');
-                });
+                });*/
+                  
             
             });
             
@@ -345,6 +354,7 @@
                 <li class="mix islands kuce montenegro">island<br/>house<br/>montenegro</li>
                 <li class="mix seaside hoteli italy">seaside<br/>hotel<br/>italy</li>
                 <li class="mix villages luksuzne_vile bulgaria">villages<br/>luxury villa<br/>bulgaria</li>
+                
                 
                 <li class="gap"></li> <!-- "gap" elements fill in the gaps in justified grid -->
             </ul>
