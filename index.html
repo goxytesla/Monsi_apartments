@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Monsi Apartments - Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script src="js/jquery-1.10.1.min.js"></script>
+        <script src="js/jquery.mixitup.min.js"></script>
+        <script src="js/jquery.slides.js"></script>
+
+        <script type="text/javascript">
+            // INSTANTIATE MIXITUP
+        
+            $(function(){
+
+                $('#Grid').mixitup({
+                    targetSelector: '.mix',
+                    filterSelector: '.filter',
+                    sortSelector: '.sort',
+                    buttonEvent: 'click',
+                    effects: ['fade','scale'],
+                    listEffects: null,
+                    easing: 'smooth',
+                    layoutMode: 'grid',
+                    targetDisplayGrid: 'inline-block',
+                    targetDisplayList: 'block',
+                    gridClass: 'grid',
+                    listClass: 'list',
+                    transitionSpeed: 600,
+                    showOnLoad: 'all',
+                    sortOnLoad: false,
+                    multiFilter: true,
+                    filterLogic: 'and',
+                    resizeContainer: true,
+                    minHeight: 0,
+                    failClass: 'fail',
+                    perspectiveDistance: '3000',
+                    perspectiveOrigin: '50% 50%',
+                    animateGridList: true,
+                    onMixLoad: null,
+                    onMixStart: null,
+                    onMixEnd: null
+                });
+            
+                $('#ToList').on('click',function(){
+                    $('.button').removeClass('active');
+                    $(this).addClass('active');
+                    $('#Grid').mixitup('toList');
+                });
+
+                $('#ToGrid').on('click',function(){
+                    $('.button').removeClass('active');
+                    $(this).addClass('active');
+                    $('#Grid').mixitup('toGrid');
+                });
+            
+            });
+            
+        </script>
+        <!--<script src="js/vendor/modernizr-2.6.2.min.js"></script>-->
+
+        <script>
+            $(function(){
+            $("#slides").slidesjs({
+            width: 900,
+            height: 226 });
+            });
+        </script>
+
+        <script>
+            $(function() {
+            $( "#menu" ).menu();
+            });
+        </script>
+
+        <style>
+
+            .ui-menu { width: 150px; }
+
+            /* Prevents slides from flashing */
+             #slides {
+                  display:none;
+            }
+
+        </style>
+
+    </head>
+    <body>  
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="header">
+
+
+            <div id="titlemenu">
+
+                <ul>
+                    <li class="menuitem"><a href="aboutus.html"><p style="padding-left:10px">about us</p></a></li>
+                    <li><a href="#"><img src="img/logo.png"></a></li>
+                    <li class="menuitem" style="margin-left:10px"><a href="#"><p>contact us</p></a></li>
+                </ul>    
+
+                <h1>Monsi Apartments</h1> 
+         
+                <a href="#">  
+                <div id="oglasi">
+
+                    <p>advertise your lodging here</p>  
+
+                </div> <!--oglasi-->  
+                </a> 
+
+            </div> <!--titlemenu-->
+            
+            <div id="imglang">
+
+                <div id="slides">
+
+                    <img src="img/slides/example-slide-1.jpg">
+                    <img src="img/slides/example-slide-2.jpg">
+                    <img src="img/slides/example-slide-3.jpg">
+                    <img src="img/slides/example-slide-4.jpg">
+
+                </div><!--slides-->
+                
+                <div id="lang"><a href="#">serbian</a></div>
+                   
+            </div><!--imglang-->    
+
+        </div> <!--header-->
+
+        <div id ="aside">  
+
+            <div id="acccontainer">
+
+             <ul id="accordion">
+                    <li><div>serbia</div>
+                        <ul>
+                            <li><a href="#">Grad 1</a></li> 
+                            <li><a href="#">Grad 2</a></li>
+                            <li><a href="#">Grad 3</a></li>
+                            <li><a href="#">Grad 4</a></li>
+                        </ul>
+                    </li> 
+
+                   <li><div>montenegro</div>
+                        <ul>
+                            <li><a href="#">Grad 1</a></li> 
+                            <li><a href="#">Grad 2</a></li>
+                            <li><a href="#">Grad 3</a></li>
+                            <li><a href="#">Grad 4</a></li>
+                        </ul>
+                    </li> 
+
+                    <li><div>croatia</div>
+                        <ul>
+                            <li><a href="#">Grad 1</a></li> 
+                            <li><a href="#">Grad 2</a></li>
+                            <li><a href="#">Grad 3</a></li>
+                            <li><a href="#">Grad 4</a></li>
+                        </ul>
+                    </li> 
+
+                    <li><div>greece</div>
+                        <ul>
+                            <li><a href="#">Grad 1</a></li> 
+                            <li><a href="#">Grad 2</a></li>
+                            <li><a href="#">Grad 3</a></li>
+                            <li><a href="#">Grad 4</a></li>
+                        </ul>
+                    </li> 
+
+                    <li><div>bulgaria</div>
+                        <ul>
+                            <li><a href="#">Grad 1</a></li> 
+                            <li><a href="#">Grad 2</a></li>
+                            <li><a href="#">Grad 3</a></li>
+                            <li><a href="#">Grad 4</a></li>
+                        </ul>
+                    </li> 
+
+                    <li><div>bosina and herzegovina</div>
+                        <ul>
+                            <li><a href="#">Grad 1</a></li> 
+                            <li><a href="#">Grad 2</a></li>
+                            <li><a href="#">Grad 3</a></li>
+                            <li><a href="#">Grad 4</a></li>
+                        </ul>
+                    </li>
+
+                    <li><div>macedonia</div>
+                        <ul>
+                            <li><a href="#">Grad 1</a></li> 
+                            <li><a href="#">Grad 2</a></li>
+                            <li><a href="#">Grad 3</a></li>
+                            <li><a href="#">Grad 4</a></li>
+                        </ul>
+                    </li> 
+
+                    <li><div>italy</div>
+                        <ul>
+                            <li><a href="#">Grad 1</a></li> 
+                            <li><a href="#">Grad 2</a></li>
+                            <li><a href="#">Grad 3</a></li>
+                            <li><a href="#">Grad 4</a></li>
+                        </ul>
+                    </li>         
+             </ul> 
+           </div><!--accconteiner-->   
+
+        <div id="asideimgcontain"> 
+
+           <img src="img/asideimg1.jpg" width="200">
+
+           <p>City: Sutomore</p>
+           <p>State: Montenegro</p>
+           <p class="last">Price: from 150e / night</p>
+
+           <img src="img/asideimg2.jpg" width="200">
+
+           <p>City: Premantura</p>
+           <p>State: Istra</p>
+           <p class="last">Price: from 45e / night</p>
+
+           <img src="img/asideimg3.jpg" width="200">
+
+           <p>City: Premantura</p>
+           <p>State: Istra</p>
+           <p class="last">Price: from 45e / night</p>
+
+        </div><!--asideimgcontain-->   
+           
+        </div><!--aside-->                  
+
+        <div id="content">
+
+        <div id="menuwrap">
+
+            <div id="layoutcontrol">
+                <div class="button active" id="ToGrid"><i></i>grid view</div>
+                <div class="button" id="ToList"><i></i>list view</div>
+            </div><!--layoutcontrol-->   
+
+            <div id="mainmenu">
+                <ul>
+                    <li class="filter" data-filter="seaside">seaside</li>
+                    <li class="filter" data-filter="islands">islands</li>
+                    <li class="filter" data-filter="villages">villages</li>
+                    <li class="filter" data-filter="spa">spa centres</li>
+                    <li class="filter" data-filter="cities">cities</li>
+                </ul>   
+            </div><!--mainmenu-->  
+            
+            <div id="Filters">
+
+            <div id="submenu">
+                <ul>
+                    <li class="filter" data-filter="apartmani">apartments</li>
+                    <li class="filter" data-filter="sobe">rooms</li>
+                    <li class="filter" data-filter="kuce">houses</li>
+                    <li class="filter" data-filter="hoteli">hotels</li>
+                    <li class="filter" data-filter="luksuzne_vile">luxury villas</li>
+                </ul>   
+            </div><!--mainmenu--> 
+
+            <div id="filters_country">
+                <ul>
+                        <li class="filter" data-filter="serbia">serbia</li>                       
+                        <li class="filter" data-filter="montenegro">montenegro</li>
+                        <li class="filter" data-filter="croatia">croatia</li>
+                        <li class="filter" data-filter="greece">greece</li>
+                        <li class="filter" data-filter="bulgaria">bulgaria</li>
+                        <li class="filter" data-filter="bih">BiH</li>
+                        <li class="filter" data-filter="macedonia">macedonia</li>
+                        <li class="filter" data-filter="italy">italy</li>
+                </ul>   
+            </div><!--filters_country--> 
+
+        </div><!--Filters-->
+            
+        </div><!--menuwrap-->
+
+            <ul id="Grid">
+                <li class="mix spa apartmani serbia">spa center<br /> apartment <br />serbia</li>
+                <li class="mix villages sobe serbia">village<br /> room <br />serbia</li>
+                <li class="mix seaside kuce serbia">seaside<br /> house <br />serbia</li>
+                <li class="mix cities hoteli serbia">city<br /> hotel <br />serbia</li>
+                <li class="mix islands luksuzne_vile serbia">island <br /> luxury villa<br /> serbia</li>
+
+                <li class="mix seaside apartmani montenegro">seaside <br /> apartment <br /> montenegro</li>
+                <li class="mix islands sobe montenegro">island <br />room <br /> montenegro</li>
+                <li class="mix villages kuce montenegro">village <br />house<br /> montenegro</li>
+                <li class="mix spa hoteli montenegro">spa center<br />hotel<br />montenegro</li>
+                <li class="mix cities luksuzne_vile montenegro">city<br />luxury villa<br/>montenegro</li>
+
+                <li class="mix seaside apartmani croatia">seaside<br/>apartment<br/>croatia</li>
+                <li class="mix islands sobe croatia">island<br/>room<br/>croatia</li>
+                <li class="mix villages kuce croatia">village<br/>house<br/>croatia</li>
+                <li class="mix spa hoteli croatia">spa center<br/>hotel<br/>croatia</li>
+                <li class="mix cities luksuzne_vile croatia">city<br/>luxury villa<br/>croatia</li>
+
+                <li class="mix cities apartmani greece">city<br/>apartmani<br/>greece</li>
+                <li class="mix spa hoteli greece">spa center<br/>hotel<br/>greece</li>
+                <li class="mix villages kuce greece">village<br/>house<br/>greece</li>
+                <li class="mix islands sobe greece">island<br/>room<br/>greece</li>
+                <li class="mix seaside luksuzne_vile greece">seaside<br/>luxury villa<br/>greece</li>
+
+                <li class="mix seaside apartmani bulgaria">seaside<br/>apartment<br/>bulgaria</li>
+                <li class="mix islands sobe bulgaria">island<br/>room<br/>bulgaria</li>
+                <li class="mix villages kuce bulgaria">village<br/>house<br/>bulgaria</li>
+                <li class="mix spa hoteli bulgaria">spa center<br/>hotel<br/>bulgaria</li>
+                <li class="mix cities luksuzne_vile bulgaria">city<br/>luxury villa<br/>bulgaria</li>
+
+                <li class="mix cities apartmani bih">city<br/>apartment<br/>BiH</li>
+                <li class="mix spa sobe bih">spa center<br/>room<br/>BiH</li>
+                <li class="mix villages kuce bih">village<br/>house<br/>BiH</li>
+                <li class="mix islands hoteli bih">island<br/>hotel<br/>BiH</li>
+                <li class="mix seaside luksuzne_vile bih">seaside<br/>luxury villa<br/>BiH</li>
+
+                <li class="mix spa apartmani macedonia">spa center<br/>apartment<br/>macedonia</li>
+                <li class="mix villages sobe macedonia">village<br/>room<br/>macedonia</li>
+                <li class="mix islands kuce macedonia">island<br/>house<br/>macedonia</li>
+                <li class="mix seaside hoteli macedonia">seaside<br/>hotel<br/>macedonia</li>
+                <li class="mix cities luksuzne_vile macedonia">city<br/>luxury villa<br/>macedonia</li>
+
+                <li class="mix villages apartmani italy">village<br/>apartment<br/>italy</li>
+                <li class="mix islands sobe italy">island<br/>room<br/>italy</li>
+                <li class="mix seaside kuce italy">seaside<br/>house<br/>italy</li>
+                <li class="mix cities hoteli italy">city<br/>hotel<br/>italy</li>
+                <li class="mix spa luksuzne_vile italy">spa center<br/>luxury villa<br/>italy</li>
+
+                <li class="mix cities apartmani serbia">city<br/>apartment<br/>serbia</li>
+                <li class="mix spa sobe macedonia">spa center<br/>room<br/>macedonia</li>
+                <li class="mix islands kuce montenegro">island<br/>house<br/>montenegro</li>
+                <li class="mix seaside hoteli italy">seaside<br/>hotel<br/>italy</li>
+                <li class="mix villages luksuzne_vile bulgaria">villages<br/>luxury villa<br/>bulgaria</li>
+                
+                <li class="gap"></li> <!-- "gap" elements fill in the gaps in justified grid -->
+            </ul>
+            
+
+        </div> <!--content-->    
+        
+        <footer>
+            <div id="socmedia">
+                <div id="fb"></div>
+                <div id="tw"></div>
+                <div id="in"></div>
+                <div id="gp"></div>
+             </div>
+            <p>Monsi Apartments all rights reserved © 2013</p>
+            </div>
+        </footer>    
+
+        <script type="text/javascript">
+        
+            $("#accordion > li > div").click(function(){
+ 
+            if(false == $(this).next().is(':visible')) {
+            $('#accordion ul').slideUp(300);
+            }
+            $(this).next().slideToggle(300);
+            });
+ 
+        </script>
+
+        <script type="text/javascript">
+        
+            $("#switchlang > li > div").click(function(){
+ 
+            if(false == $(this).next().is(':visible')) {
+            $('#switchlang ul').slideUp(300);
+            }
+            $(this).next().slideToggle(300);
+            });
+ 
+        </script>
+
+        
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>-->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--<script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>-->
+    </body>
+</html>

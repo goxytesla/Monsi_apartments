@@ -1,0 +1,916 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td
+ {
+    margin: 0;
+    padding: 0; 
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color:#39adb9;
+}
+
+
+/* ==========================================================================
+   Fontfaces
+   ========================================================================== */
+
+@font-face {
+                font-family: 'helvetica_ce_35_thinregular';
+                src: url('../fonts/helvetica/helvetica_neue_ce_35_thin-webfont.eot');
+                src: url('../fonts/helvetica/helvetica_neue_ce_35_thin-webfont.eot?#iefix') format('embedded-opentype'),
+                     url('../fonts/helvetica/helvetica_neue_ce_35_thin-webfont.woff') format('woff'),
+                     url('../fonts/helvetica/helvetica_neue_ce_35_thin-webfont.ttf') format('truetype'),
+                     url('../fonts/helvetica/helvetica_neue_ce_35_thin-webfont.svg#helvetica_ce_35_thinregular') format('svg');
+                font-weight: normal;
+                font-style: normal;
+
+}
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    font-family: 'helvetica_ce_35_thinregular';
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+#header {
+    width: 100%;
+    height:250px;
+}
+
+#titlemenu {
+    width: 45%;
+    height:250px;
+    float:left;
+}
+
+#titlemenu ul {
+    width:100%;
+    height:60px;
+    margin-left:5%;
+    margin-top:3%;
+}
+
+#titlemenu ul li {
+    float:left;
+    margin-left:1%;
+    margin-right:2%;
+}
+
+#titlemenu ul li p {
+    padding-left:5px;
+    width:100px;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    -ms-transition-duration:0.5s;
+}
+
+
+#titlemenu ul li p:hover {
+    padding-left:5px;
+   -webkit-transform:scale(1.1);
+}
+
+#oglasi {
+    width:40%;
+    height:40px;
+    background-color: #39adb9;
+    position: absolute;
+    top:210px;
+    left:2%;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    -ms-transition-duration:0.5s;
+}
+
+#oglasi p {
+    text-align: center;
+    line-height: 2em;
+    font-size: 20px;
+    color:#FFF;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    -ms-transition-duration:0.5s;
+}
+
+#oglasi:hover {
+    background-color: #e4e4db;
+}
+
+#oglasi p:hover {
+    color: #39adb9;
+}
+
+#content {
+    margin-top:30px;
+    margin-left:300px;
+    margin-bottom:100px;
+}
+
+
+#imglang {
+    width:55%;
+    float:right;
+    height:250px;
+}
+
+#slides {
+    margin-top:23px;
+    width:900px;
+    height:226px;
+    float:left;
+}
+
+#aside {
+    float:left;
+    width:250px;
+    margin-left:2%;
+    margin-top:30px;
+}
+
+#acccontainer {
+    background-color: #e4e4db;
+    width: 200px;
+}
+
+#asideimgcontain img {
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+#asideimgcontain p {
+    color: #39adb9;
+}
+
+#lang {
+    top:23px;
+    left:95%;
+    position:absolute;
+    z-index: 100;
+}
+
+ .menuitem {
+    font-size:20px;
+    color:#39adb9;
+    margin-top:20px;
+    width:90px;
+}
+
+.down {
+    padding-top:3px;
+    margin-left:3px;
+}
+
+
+h1 {
+    margin-left:5%;
+    font-size:70px;
+    font-weight: normal;
+    color:#39adb9;
+    margin-top:30px;
+}
+
+footer {
+    width:100%;
+    height:100px;
+    background-color:#39adb9;
+    position:fixed;
+    top:90%;
+    z-index: 21;
+}
+
+footer p {
+    text-align: center;
+    line-height: 3em;
+    font-size:30px;
+    color:#FFF;
+}
+
+#fb {
+    margin-top:30px;
+    float:left;
+    width:32px;
+    height:32px;
+    background:url(../img/facebook.png) no-repeat;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    -ms-transition-duration:0.5s;
+}
+
+#tw {
+    margin-top:30px;
+    float:left;
+    width:32px;
+    height:32px;
+    background:url(../img/twitter.png) no-repeat;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    -ms-transition-duration:0.5s;
+}
+
+#in {
+    margin-top:30px;
+    float:left;
+    width:32px;
+    height:32px;
+    background:url(../img/linkedin.png) no-repeat;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    -ms-transition-duration:0.5s;
+}
+
+#gp {
+    margin-top:30px;
+    float:left;
+    width:32px;
+    height:32px;
+    background:url(../img/google+.png) no-repeat;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    -ms-transition-duration:0.5s;
+}
+
+/* ==========================================================================
+   Menu styles
+   ========================================================================== */
+#layoutcontrol {
+    background-color:#39adb9;
+    height:25px;
+}
+
+#layoutcontrol div {
+    float:left;
+    display:block;
+    width:50%;
+    height:25px;
+    text-align: center;
+    font-size:15px;
+    line-height: 1.5em;
+    color:#e4e4db;
+    cursor:pointer;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    -ms-transition-duration:0.5s; 
+}
+
+#layoutcontrol div:hover {
+    background-color:#e4e4db;
+    color:#39adb9;
+}
+
+#layoutcontrol div.active {
+    background-color:#e4e4db;
+    color:#39adb9;
+}
+
+#menuwrap {
+    background-color:#e4e4db;
+}
+
+#mainmenu {
+    margin-top:5px;
+    background-color:#39adb9;
+    height:60px;
+    margin-bottom:5px;
+}
+
+#mainmenu ul li {   
+    float:left;
+    display:block;
+    width:20%;
+    text-align:center;
+    font-size:30px;
+    line-height:2em;
+    cursor: pointer;
+    color:#e4e4db;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    -ms-transition-duration:0.5s;
+}
+
+#mainmenu ul li:hover {
+    background-color:#e4e4db;
+    color:#39adb9;
+}
+
+#mainmenu li.active {
+    background-color:#e4e4db;
+    color:#39adb9;
+}
+
+#submenu {
+    background-color:#39adb9;
+    height:40px;
+    margin-bottom:5px;
+}
+
+#submenu ul li  {   
+    float:left;
+    display:block;
+    width:20%;
+    text-align:center;
+    font-size:20px;
+    line-height: 2em;
+    color:#e4e4db;
+    cursor: pointer;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    -ms-transition-duration:0.5s;   
+}
+
+#submenu ul li:hover {
+    background-color:#e4e4db;
+    color:#39adb9;
+}
+
+#submenu li.active {
+    background-color:#e4e4db;
+    color:#39adb9;
+}
+
+#filters_country {
+    background-color:#39adb9;
+    height:35px;
+}
+
+#filters_country ul li  {   
+    float:left;
+    display:block;
+    width:12.5%;
+    text-align:center;
+    font-size:18px;
+    line-height: 2em;
+    color:#e4e4db;
+    cursor: pointer;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    -ms-transition-duration:0.5s;   
+}
+
+#filters_country ul li:hover {
+    background-color:#e4e4db;
+    color:#39adb9;
+}
+
+#filters_country li.active {
+    background-color:#e4e4db;
+    color:#39adb9;
+}
+
+/* ==========================================================================
+   Apartmani
+   ========================================================================== */
+
+#righer {
+    float:left;
+    margin-left:30px;
+}
+
+#info {
+    background-color: red;
+}
+
+#slika_apartmana {
+    float:left;
+}
+
+#apartmantwrap {
+    font-family: Goergia, Times, Times New Roman, serif;
+}
+
+#naslov {
+    background:green;
+}
+
+#naslov h2 {
+    font-size:50px;
+}
+
+/* ==========================================================================
+   Accordion
+   ========================================================================== */
+
+#accordion {
+    list-style: none;
+    padding: 0 0 0 0;
+    width: 200px;
+    background-color: #e4e4db;
+}
+
+#accordion div {
+    color:#39adb9;
+    font-size: 20px;
+    display: block;
+    margin: 1px;
+    cursor: pointer;
+    padding-left:7px;
+    padding-top:7px;
+    padding-bottom:7px;
+    border-bottom: 1px solid white;
+    -webkit-transition-duration:0.5s;
+    -moz-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    -ms-transition-duration:0.5s;
+}
+
+#accordion div:hover {
+    color:#FFF;
+    background-color:#39adb9;
+}
+
+#accordion ul {
+    list-style: none;
+    padding: 0 0 0 0;
+}
+
+#accordion ul{
+    display: none;
+}
+
+#accordion ul li {
+    font-weight: normal;
+    cursor: auto;
+    background-color: #fff;
+    padding: 0 0 0 7px;
+}
+
+#accordion a {
+    text-decoration: none;
+}
+
+#accordion a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================================================
+   Grid mixer
+   ========================================================================== */
+
+
+#Grid {
+    text-align: justify;
+    font-size: 0.1px;
+    margin-top:50px;
+    margin-right:50px;
+}
+
+#Grid:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+#Grid .mix{
+    display: none;
+    opacity: 0;
+    width: 200px;
+    height: 200px;
+    vertical-align: top;
+    margin-bottom: 20px;
+    background: #e4e4db;
+    color: #39adb9;
+    
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+}
+
+#Grid .gap{
+    display: inline-block;
+    width: 200px;
+}
+
+/* ==========================================================================
+   List mixer
+   ========================================================================== */
+
+#Grid.list .list_header{
+    height: 38px;
+    line-height: 38px;
+    background: #f0ebe5;
+    text-align: right;
+    color: #59514c;
+    
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#Grid.list .meta{
+    display: inline-block;
+    width: 205px;
+    text-align: center;
+    line-height: 99px;
+    border-left: 1px solid #d7d7d7;
+    height: 100%;
+    vertical-align: top;
+}
+
+#Grid.list .list_header .meta{
+    line-height: 38px;
+    border: 0 none;
+}
+
+#Grid.list .meta.name{
+    float: left;
+    text-align: left;
+    width: auto;
+    border-left: 0 none;
+}
+
+#Grid.list .list_header .meta.name{
+    padding-left: 15px;
+}
+
+#Grid.list .list_header .meta span{
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 7px 0 0;
+    cursor: pointer;
+    
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#Grid.list .list_header .meta span:after{
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 7px;
+    border: 5px solid transparent;
+}
+
+#Grid.list .list_header .meta span.asc:after{
+    border-top: 7px solid #c3bdb8;
+}
+
+#Grid.list .list_header .meta span.desc:after{
+    top: 4px;
+    border-bottom: 7px solid #c3bdb8;
+}
+
+#Grid.list .list_header .meta span:hover{
+    background: #c3bdb8;
+}
+
+#Grid.list .list_header .meta span.asc:hover:after{
+    border-top-color: #f0ebe5;
+}
+
+#Grid.list .list_header .meta span.desc:hover:after{
+    border-bottom-color: #f0ebe5;
+}
+
+#Grid.list .list_header .meta span.active.asc:after{
+    border-top-color: #e96d51;
+}
+
+#Grid.list .list_header .meta span.active.desc:after{
+    border-bottom-color: #e96d51;
+}
+
+
+#Grid.list .mix{
+    display: none;
+    opacity: 0;
+    padding: 18px 0 14px;
+    border-bottom: 1px solid #d7d7d7;
+    text-align: right;
+    height: 99px;
+    width: 100%;
+    line-height: 99px;
+    background: #f9f6f0;
+    vertical-align: top;
+    font-weight: 300;
+}
+
+#Grid.list .mix .meta *{
+    line-height: 1;
+}
+
+#Grid.list .mix .meta p,
+#Grid.list .mix .meta ul{
+    display: inline-block;
+    vertical-align: middle;
+    list-style: none;
+}
+
+#Grid.list .mix .meta li{
+    margin-bottom: 5px;
+}
+
+#Grid.list .img_wrapper{
+    display: inline-block;
+    width: 177px;
+    height: 95px;
+    vertical-align: top;
+    margin-right: 30px;
+}
+
+#Grid.list .titles{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#Grid.list .titles h2{
+    font-weight: 700;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #47a497;
+    letter-spacing: 2px;
+    margin-bottom: 3px;
+    line-height: 1.2 !important;
+}
+
+#Grid.list .titles p{
+    text-indent: -2px;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (max-width: 1800px) {
+    
+    #slides {
+        margin-top:50px;
+        width:800px;
+        height:226px;
+        float:left;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+
+    h1 {
+        margin-top:40px;
+        font-size:60px;
+    }
+
+    #slides {
+        margin-top:75px;
+        width:700px;
+        height:226px;
+        float:left;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+
+    h1 {
+        margin-top:60px;
+        font-size:50px;
+    }
+
+    #slides {
+        margin-top:100px;
+        width:600px;
+        height:226px;
+        float:left;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    h1 {
+        margin-top:70px;
+        font-size:40px;
+    }
+
+    #slides {
+        margin-top:125px;
+        width:500px;
+        height:226px;
+        float:left;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    body {
+        font-family: Goergia, Times, Times New Roman, serif;
+    }
+}
+
