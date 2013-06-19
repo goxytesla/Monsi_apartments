@@ -1,5 +1,13 @@
 
+Message to kind people of MixItUp:
 
-This is humble project of mine featuring MixItUp filtering plugin built from HTML5 boilerplate. It also features a number of other plugins. It is still in it's early stages and currently I am working on resolving multifiltering issues with MixItUp. It's totaly on my part, being very bad with all things Javascript. So any help on that matter would be most welcome.
+- I can't get my filters to behave the way I want. Filters of the same "row" shouldn't crash the filter.
+For example, user should be able to activate "seaside", then click bellow on "apartments" and on "luxury villas"
+and get all apartments and luxury villas available on seaside.
 
-Thank you.
+Right now, if user clicks on "seaside" and clicks bellow on "apartments" he will get seaside apartments, but if he adds
+"luxury villas" filter crashes on me.
+
+Thanks for any help you can provide in advance.
+
+Kind regards from Serbia.
